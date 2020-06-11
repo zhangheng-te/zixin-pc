@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="box">
+    <!-- 导航栏 -->
+    <div class="nav">
+      <!-- logo -->
+      <div class="logo">
+        <img src="./imgs/logo.png" alt="">
+      </div>
+      <!-- tab栏 -->
+      <div id="tab">
+        <ul>
+          <li class="tabs">首页</li>
+          <li>课程</li>
+          <li>院校</li>
+          <li>题库</li>
+          <li>APP</li>
+        </ul>
+      </div>
+      <!-- 登录注册跳转按钮 -->
+      <div class="register">
+        <span>登录</span>/<span>注册</span>
+      </div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content">
+      <div class="div_show">
+        <iframe src="./html/home.html" width="100%" height="5000px" name="demo" frameborder="0" scrolling="no"
+          sandbox="allow-same-origin allow-top-navigation allow-forms allow-scripts"></iframe>
+      </div>
+      <div>
+        2
+      </div>
+
+      <div>
+        3
+      </div>
+      <div>
+        4
+      </div>
+      <div>
+        5
+      </div>
+    </div>
+    <!-- 底部区域 -->
+    <div class="footer">
+      <div class="about">
+        <h2>联系我们</h2>
+        <p>地 址：苏州市高新区长江路436号绿宝广场2幢5楼</p>
+        <p>研究生教育中心电话：0512-88960078、18913178356</p>
+        <p>成人教育学院（专科、本科）电话：0512-68852386、17715390037</p>
+        <p>院长办公室电话：0512-68850512</p>
+      </div>
+      <div class="scan">
+        <div>
+          <span>关于我们</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>关注公众号</span>
+        </div>
+        <img src="./imgs/erweima.jpg" alt="">
+        <p>江苏子信科技创新研究院有限公司 版权所有 苏ICP备17042838号-8</p>
+      </div>
+
+
+    </div>
+  </div>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/jquery.mousewheel.min.js"></script>
+  <script>
+
+    $('ul li').click(function (event) {
+      $(this).addClass('tabs');
+      $(this).siblings().removeClass('tabs');
+
+      $('.content div').eq($(this).index()).addClass('div_show');
+      $('.content div').eq($(this).index()).siblings().removeClass('div_show');
+    })
+
+    window.onscroll = function () {
+      //获得页面向左、向上卷动的距离
+      function getScroll() {
+        return {
+          left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+          top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+        };
+      }
+      var sTop = getScroll().top;
+      console.log(sTop);
+      if (sTop > 100) {
+        document.getElementById("header").style.backgroundColor = '#F59797';
+      } else {
+        document.getElementById("header").style.backgroundColor = '#E72C2C';
+      }
+    };
+
+  </script>
+</body>
+
+</html>
