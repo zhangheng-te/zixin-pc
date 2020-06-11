@@ -8,8 +8,7 @@ $(function () {
 
     // 轮播图
     $('.banner').slider({
-        imgList: [
-            {
+        imgList: [{
                 img: './imgs/banner1.jpg',
                 a: '#',
             },

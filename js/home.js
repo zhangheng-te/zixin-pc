@@ -81,7 +81,7 @@
             lineHeight: this.btnHeight + 'px',
             position: 'absolute',
             top: '50%',
-            marginTop: - this.btnHeight / 2,
+            marginTop: -this.btnHeight / 2,
             cursor: 'pointer',
         });
         $('.right-btn', this.wrap).css({
@@ -91,7 +91,7 @@
             height: this.spanHeight + (this.spanMargin * 2),
             position: 'absolute',
             left: '50%',
-            marginLeft: - this.imgNum * (this.spanWidth + (this.spanMargin) * 2) / 2,
+            marginLeft: -this.imgNum * (this.spanWidth + (this.spanMargin) * 2) / 2,
             bottom: 10,
         })
         $('.spot span', this.wrap).css({

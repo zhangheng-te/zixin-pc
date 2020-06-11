@@ -21,7 +21,7 @@ body .nav .logo {
 body .nav .logo img {
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 10px ;
+  margin-bottom: 10px;
 }
 body .nav #tab {
   box-sizing: border-box;
@@ -77,10 +77,141 @@ body .content .div_hide {
 body .content .div_show {
   display: block;
 }
+body .content .gongyong {
+  width: 100%;
+  height: 1200px;
+  overflow: hidden;
+}
+body .content .gongyong .box {
+  width: 1500px;
+  height: 700px;
+  margin: 250px auto;
+}
+body .content .gongyong .box .top h1 {
+  display: inline-block;
+  margin: 0;
+}
+body .content .gongyong .box .top a {
+  width: 57px;
+  height: 50px;
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+body .content .gongyong .box .top a img {
+  width: 100%;
+  height: 100%;
+}
+body .content .gongyong .box .bottom {
+  width: 100%;
+}
 body .content .banner {
   display: block;
   width: 100%;
   height: 1200px;
+}
+body .content .class .imgList li img {
+  width: 100%;
+}
+body .content .class .left-btn,
+body .content .class .right-btn {
+  font-family: "宋体";
+  opacity: 0.3;
+}
+body .content .class .left-btn:hover,
+body .content .class .right-btn:hover {
+  opacity: 1;
+}
+body .content .live {
+  background-image: url(../imgs/beijing1.gif);
+  background-size: contain;
+}
+body .content .live ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+body .content .live li {
+  list-style: none;
+  float: left;
+  width: 190px;
+  text-align: center;
+  transition: all 0.5s;
+  margin-top: 180px;
+  position: relative;
+}
+body .content .live li img {
+  border-radius: 50%;
+  width: 100%;
+  margin: 0;
+}
+body .content .live li .cont {
+  margin-top: 10px;
+  text-align: start;
+}
+body .content .live li .cont p {
+  font-size: 14px;
+}
+body .content .live .big {
+  width: 400px;
+  height: 400px;
+  margin-top: 100px;
+  transition: all 0.6s;
+  position: 010;
+}
+body .content .live .big .cont {
+  background-color: #fff;
+  padding: 3px 15px;
+  position: absolute;
+  bottom: -35px;
+}
+body .content .information {
+  background-image: url(../imgs/beijing2.gif);
+  background-size: contain;
+}
+body .content .information ul {
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body .content .information ul li {
+  list-style: none;
+  float: left;
+  width: 260px;
+  padding-top: 30px;
+  overflow: hidden;
+}
+body .content .information ul li .img {
+  width: 100%;
+  height: 165px;
+  position: relative;
+  overflow: hidden;
+}
+body .content .information ul li .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+body .content .information ul li p {
+  font-size: 16px;
+  line-height: 35px;
+}
+body .content .information ul .li:hover img {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: -10px;
+  left: -10%;
+  transition: all 0.6s;
 }
 body .footer {
   font-weight: 400;
@@ -110,138 +241,8 @@ body .footer .scan {
 body .footer .scan img {
   width: 188px;
   height: 188px;
-  margin: 23px  0 0 21px;
+  margin: 23px 0 0 21px;
 }
 body .footer .scan div {
   font-size: 24px;
-}
-body .imgList li img {
-  width: 100%;
-}
-body .left-btn,
-body .right-btn {
-  font-family: "宋体";
-  opacity: 0.3;
-}
-body .left-btn:hover,
-body .right-btn:hover {
-  opacity: 1;
-}
-.gongyong {
-  width: 100%;
-  height: 1200px;
-  overflow: hidden;
-}
-.gongyong .box {
-  width: 1500px;
-  height: 700px;
-  margin: 250px auto;
-}
-.gongyong .box .top h1 {
-  display: inline-block;
-  margin: 0;
-}
-.gongyong .box .top a {
-  width: 57px;
-  height: 50px;
-  display: inline-block;
-  float: right;
-  margin-top: 10px;
-  margin-right: 30px;
-}
-.gongyong .box .top a img {
-  width: 100%;
-  height: 100%;
-}
-.gongyong .box .bottom {
-  width: 100%;
-}
-.live {
-  background-image: url(../imgs/beijing1.gif);
-  background-size: contain;
-}
-.live ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.live li {
-  list-style: none;
-  float: left;
-  width: 190px;
-  text-align: center;
-  transition: all 0.5s;
-  margin-top: 180px;
-}
-.live li img {
-  border-radius: 50%;
-  width: 100%;
-  margin: 0;
-}
-.live li .cont {
-  margin-top: 10px;
-  text-align: start;
-}
-.live li .cont p {
-  font-size: 14px;
-}
-.live .big {
-  width: 400px;
-  height: 400px;
-  margin-top: 100px;
-  transition: all 0.6s;
-  position: 010;
-}
-.live .big .cont {
-  background-color: #fff;
-  padding: 3px 15px;
-  position: absolute;
-  bottom: -35px;
-}
-.information {
-  background-image: url(../imgs/beijing2.gif);
-  background-size: contain;
-}
-.information ul {
-  margin-top: 30px;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.information ul li {
-  list-style: none;
-  float: left;
-  width: 260px;
-  padding-top: 30px;
-  overflow: hidden;
-}
-.information ul li .img {
-  width: 100%;
-  height: 165px;
-  position: relative;
-  overflow: hidden;
-}
-.information ul li .img img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 0.5s;
-}
-.information ul li p {
-  font-size: 16px;
-  line-height: 35px;
-}
-.information ul .li:hover img {
-  width: 120%;
-  height: 120%;
-  position: absolute;
-  top: -10px;
-  left: -10%;
-  transition: all 0.6s;
 }
