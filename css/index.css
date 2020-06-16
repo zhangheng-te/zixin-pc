@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5;
 }
 body .nav {
   box-sizing: border-box;
   width: 100%;
-  height: 80px;
+  height: 3.333rem;
   position: fixed;
   left: 0;
   top: 0;
@@ -13,54 +14,101 @@ body .nav {
   z-index: 10;
 }
 body .nav .logo {
-  box-sizing: border-box;
-  display: inline-block;
-  height: 80px;
-  margin: 0 0 0 157px;
+  height: 3.333rem;
+  margin: 0.833rem 0 0 6.542rem;
+  float: left;
 }
 body .nav .logo img {
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 0.417rem;
 }
 body .nav #tab {
   box-sizing: border-box;
-  display: inline-block;
-  font-size: 23px;
+  font-size: 0.958rem;
+  float: left;
 }
 body .nav #tab ul {
   box-sizing: border-box;
   margin-top: 0;
-  margin-left: 677px;
+  margin-left: 12.5rem;
   padding: 0;
 }
 body .nav #tab ul li {
   box-sizing: border-box;
-  width: 110px;
-  height: 80px;
-  line-height: 80px;
+  width: 4.583rem;
+  height: 3.333rem;
+  line-height: 3.333rem;
   list-style: none;
   float: left;
   text-align: center;
+  font-weight: 200;
+  color: #777;
 }
 body .nav #tab ul li:hover {
   cursor: pointer;
-  font-size: 24px;
+  font-size: 1rem;
+  color: #000;
 }
 body .nav #tab ul .tabs {
-  border-bottom: 3px solid #2397ff;
+  border-bottom: 0.125rem solid #2397ff;
+  font-weight: 400;
+  color: #000;
+}
+body .nav .app {
+  padding: 0 0.417rem;
+  height: 3.333rem;
+  float: left;
+  line-height: 3.333rem;
+  margin-left: 0.833rem;
+  font-weight: 200;
+  color: #777;
+  position: relative;
+  font-size: 0.95rem;
+}
+body .nav .app .sm {
+  width: 8.333rem;
+  height: 10.333rem;
+  position: absolute;
+  bottom: -10.333rem;
+  left: -3.167rem;
+  background-color: #fff;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  font-size: 0.833rem;
+  line-height: 0;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  display: none;
+}
+body .nav .app .sm img {
+  width: 100%;
+  height: 8.333rem;
+  margin-bottom: 0.417rem;
+}
+body .nav .app:hover {
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  color: #000;
+}
+body .nav .app:hover .sm {
+  display: block;
+  opacity: 1;
+  transition: top all 0.6s;
 }
 body .nav .register {
-  display: inline-block;
-  margin-right: 500px;
+  margin-right: 6.25rem;
   height: 100%;
   float: right;
+  font-size: 0.667rem;
 }
 body .nav .register span {
   display: inline-block;
   height: 100%;
-  line-height: 80px;
-  margin: 0 10px;
+  line-height: 3.333rem;
+  margin: 0 0.417rem;
 }
 body .nav .register span:hover {
   color: #2397ff;
@@ -68,66 +116,142 @@ body .nav .register span:hover {
 }
 body .content {
   width: 100%;
-  margin: 80px auto 0;
+  margin: 3.333rem auto 0;
   padding: 0;
 }
-body .content .div_hide {
+body .content .hide {
   display: none;
 }
-body .content .div_show {
-  display: block;
-}
-body .content .gongyong {
+body .content .index .gongyong {
   width: 100%;
-  height: 1200px;
   overflow: hidden;
 }
-body .content .gongyong .box {
-  width: 1500px;
-  height: 700px;
-  margin: 250px auto;
+body .content .index .gongyong .box {
+  width: 62.5rem;
+  height: 29.167rem;
+  margin: 8.333rem auto;
 }
-body .content .gongyong .box .top h1 {
+body .content .index .gongyong .box .top h1 {
   display: inline-block;
   margin: 0;
 }
-body .content .gongyong .box .top a {
-  width: 57px;
-  height: 50px;
-  display: inline-block;
+body .content .index .gongyong .box .top a {
+  width: 2.375rem;
+  height: 2.083rem;
   float: right;
-  margin-top: 10px;
-  margin-right: 30px;
+  margin-top: 0.417rem;
+  margin-right: 1.25rem;
 }
-body .content .gongyong .box .top a img {
+body .content .index .gongyong .box .top a img {
   width: 100%;
   height: 100%;
 }
-body .content .gongyong .box .bottom {
+body .content .index .gongyong .box .bottom {
   width: 100%;
 }
-body .content .banner {
+body .content .index .banner {
   display: block;
   width: 100%;
-  height: 1200px;
+  height: 41.667rem;
+  /* flexslider */
 }
-body .content .class .imgList li img {
+body .content .index .banner img {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+body .content .index .banner .flexslider {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: url(../imgs/loading.gif) 50% no-repeat;
+}
+body .content .index .banner .slides {
+  position: relative;
+  z-index: 1;
+}
+body .content .index .banner .slides li {
+  height: 100%;
+}
+body .content .index .banner .flex-control-nav {
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+body .content .index .banner .flex-control-nav li {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 5px;
+  *display: inline;
+  zoom: 1;
+}
+body .content .index .banner .flex-control-nav a {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 40px;
+  overflow: hidden;
+  background: url(../imgs/dot.png) right 0 no-repeat;
+  cursor: pointer;
+}
+body .content .index .banner .flex-control-nav .flex-active {
+  background-position: 0 0;
+}
+body .content .index .banner .flex-direction-nav {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 45%;
+}
+body .content .index .banner .flex-direction-nav li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+}
+body .content .index .banner .flex-direction-nav li a.flex-prev {
+  left: 40px;
+  width: 70px;
+  height: 70px;
+  background: url(../imgs/prev.png) center center no-repeat;
+  background-size: 100%;
+  display: none;
+}
+body .content .index .banner .flex-direction-nav li a.flex-next {
+  right: 40px;
+  width: 70px;
+  height: 70px;
+  background: url(../imgs/next.png) center center no-repeat;
+  background-size: 100%;
+  display: none;
+}
+body .content .index .banner:hover .flex-direction-nav li a.flex-prev {
+  left: 40px;
+  background: url(../imgs/prev.png) center center no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+  display: block;
+}
+body .content .index .banner:hover .flex-direction-nav li a.flex-next {
+  right: 40px;
+  background: url(../imgs/next.png) center center no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+  display: block;
+}
+body .content .index .class .imgList li img {
   width: 100%;
 }
-body .content .class .left-btn,
-body .content .class .right-btn {
-  font-family: "宋体";
-  opacity: 0.3;
-}
-body .content .class .left-btn:hover,
-body .content .class .right-btn:hover {
-  opacity: 1;
-}
-body .content .live {
+body .content .index .live {
   background-image: url(../imgs/beijing1.gif);
   background-size: contain;
 }
-body .content .live ul {
+body .content .index .live ul {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -135,65 +259,65 @@ body .content .live ul {
   display: flex;
   justify-content: space-around;
 }
-body .content .live li {
+body .content .index .live li {
   list-style: none;
   float: left;
-  width: 190px;
+  width: 7.917rem;
   text-align: center;
   transition: all 0.5s;
-  margin-top: 180px;
+  margin-top: 7.5rem;
   position: relative;
 }
-body .content .live li img {
+body .content .index .live li img {
   border-radius: 50%;
   width: 100%;
   margin: 0;
 }
-body .content .live li .cont {
-  margin-top: 10px;
+body .content .index .live li .cont {
+  margin-top: 0.417rem;
   text-align: start;
 }
-body .content .live li .cont p {
-  font-size: 14px;
+body .content .index .live li .cont p {
+  font-size: 0.583rem;
 }
-body .content .live .big {
-  width: 400px;
-  height: 400px;
-  margin-top: 100px;
+body .content .index .live .big {
+  width: 16.667rem;
+  height: 16.667rem;
+  margin-top: 4.167rem;
   transition: all 0.6s;
-  position: 010;
+  position: relative;
 }
-body .content .live .big .cont {
-  background-color: #fff;
-  padding: 3px 15px;
+body .content .index .live .big .cont {
+  background: #fff;
+  padding: 0.125rem 0.625rem;
   position: absolute;
-  bottom: -35px;
+  bottom: -1.458rem;
 }
-body .content .information {
+body .content .index .information {
   background-image: url(../imgs/beijing2.gif);
   background-size: contain;
 }
-body .content .information ul {
-  margin-top: 30px;
+body .content .index .information ul {
+  margin-top: 1.25rem;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-body .content .information ul li {
+body .content .index .information ul li {
   list-style: none;
   float: left;
-  width: 260px;
-  padding-top: 30px;
+  width: 10.833rem;
+  padding-top: 1.25rem;
   overflow: hidden;
 }
-body .content .information ul li .img {
+body .content .index .information ul li .img {
   width: 100%;
-  height: 165px;
+  height: 6.875rem;
   position: relative;
   overflow: hidden;
 }
-body .content .information ul li .img img {
+body .content .index .information ul li .img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -201,48 +325,353 @@ body .content .information ul li .img img {
   height: 100%;
   transition: all 0.5s;
 }
-body .content .information ul li p {
-  font-size: 16px;
-  line-height: 35px;
+body .content .index .information ul li p {
+  font-size: 0.667rem;
+  line-height: 1.458rem;
 }
-body .content .information ul .li:hover img {
+body .content .index .information ul .li:hover img {
   width: 120%;
   height: 120%;
   position: absolute;
-  top: -10px;
+  top: -0.417rem;
   left: -10%;
   transition: all 0.6s;
+}
+body .content .classify {
+  width: 50rem;
+  margin: 0 auto;
+  padding: 0.417rem;
+}
+body .content .classify .div_hide {
+  display: none;
+}
+body .content .classify .tab {
+  font-size: 0.833rem;
+  padding: 1.667rem 0;
+}
+body .content .classify .tab p {
+  font-size: 0.917rem;
+  display: inline-block;
+}
+body .content .classify .tab ul {
+  display: inline-block;
+}
+body .content .classify .tab ul li {
+  list-style: none;
+  display: inline-block;
+  width: 5.25rem;
+  height: 1.583rem;
+  text-align: center;
+  line-height: 1.583rem;
+}
+body .content .classify .tab ul .li {
+  background-color: #2397ff;
+  border-radius: 0.833rem;
+  color: #fff;
+}
+body .content .classify .tab ul li:hover {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+body .content .classify .div {
+  position: relative;
+}
+body .content .classify .div h3 {
+  font-weight: 400;
+  border-left: 0.208rem solid #2397ff;
+  padding-left: 0.833rem;
+  margin: 0.417rem 0;
+}
+body .content .classify .div ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+body .content .classify .div ul li {
+  width: 23%;
+  height: 10.833rem;
+  background-color: #fff;
+  float: left;
+  margin: 1.25rem 0 0.833rem 2%;
+  position: relative;
+  transition: all 0.6s;
+  border-radius: 0.417rem;
+  overflow: hidden;
+}
+body .content .classify .div ul li img {
+  width: 100%;
+  height: 5.417rem;
+}
+body .content .classify .div ul li .hidden {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 0;
+  line-height: 5.417rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: all 0.6s;
+  overflow: hidden;
+}
+body .content .classify .div ul li p {
+  font-size: 0.75rem;
+  padding: 0.417rem;
+}
+body .content .classify .div ul li div {
+  width: 100%;
+  position: absolute;
+  bottom: 0.208rem;
+  padding: 0.417rem;
+}
+body .content .classify .div ul li div span {
+  display: inline-block;
+}
+body .content .classify .div ul li div .left {
+  float: left;
+  font-size: 0.75rem;
+}
+body .content .classify .div ul li div .right {
+  float: right;
+  font-size: 0.583rem;
+}
+body .content .classify .div ul li div .right img {
+  width: 0.833rem;
+  height: 0.417rem;
+  margin-right: 0.125rem;
+}
+body .content .classify .div ul li:hover {
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transition: all 0.6s;
+  margin-top: 1.2rem;
+}
+body .content .classify .div ul li:hover .hidden {
+  height: 5.417rem;
+  transition: all 0.6s;
+}
+body .content .classify .div a {
+  cursor: pointer;
+  border: 1px solid black;
+}
+body .content .classify .btn {
+  float: right;
+  font-size: 0.667rem;
+  margin-bottom: 0.417rem;
+}
+body .content .header {
+  text-align: center;
+  color: #9C9C9C;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+body .content .header h1 {
+  font-weight: 400;
+  color: #000;
+  font-size: 35px;
+}
+body .content .wrapper {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+body .content .cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+body .content .col {
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+body .content .container {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+body .content .front,
+body .content .back {
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  min-height: 280px;
+  height: auto;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+body .content .back {
+  background: #cedce7;
+  background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+  background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+  background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+}
+body .content .front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  opacity: 0.5;
+  background-color: #000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+body .content .container:hover .front,
+body .content .container:hover .back {
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+body .content .back {
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+body .content .inner {
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+}
+body .content .inner p {
+  font-size: 18px;
+  font-weight: 200;
+}
+body .content .container .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+body .content .container .front {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+body .content .container:hover .back {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+body .content .container:hover .front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+body .content .front .inner p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+body .content .front .inner p:after {
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -0.75rem;
+}
+body .content .front .inner span {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+@media screen and (max-width: 64rem) {
+  body .content .col {
+    width: calc(33.333333% - 2rem);
+  }
+}
+@media screen and (max-width: 48rem) {
+  body .content .col {
+    width: calc(50% - 2rem);
+  }
+}
+@media screen and (max-width: 32rem) {
+  body .content .col {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
 }
 body .footer {
   font-weight: 400;
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 25rem;
   background: url(../imgs/beijing3.gif) center;
-  padding-top: 470px;
+  background-size: contain;
+  padding-top: 14.583rem;
   box-sizing: border-box;
+  overflow: hidden;
 }
 body .footer p {
   font-weight: 200;
-  font-size: 14px;
-  margin: 8px 0;
+  font-size: 0.583rem;
+  margin: 0.333rem 0;
 }
 body .footer .about {
   display: inline-block;
   color: #fff;
-  margin-left: 550px;
+  margin-left: 12.5rem;
+}
+body .footer .about h2 {
+  font-weight: 400;
+  margin-bottom: 0.833rem;
 }
 body .footer .scan {
   color: #fff;
-  display: inline-block;
   float: right;
-  margin-right: 460px;
+  margin-right: 8.333rem;
 }
 body .footer .scan img {
-  width: 188px;
-  height: 188px;
-  margin: 23px 0 0 21px;
+  width: 5rem;
+  height: 5rem;
+  margin: 0.625rem 0 0 0.083rem;
 }
 body .footer .scan div {
-  font-size: 24px;
+  font-size: 0.833rem;
 }

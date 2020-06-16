@@ -8,11 +8,9 @@
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/swiper.min.css">
   <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
-
   <!-- 导航栏 -->
   <div class="nav">
     <!-- logo -->
@@ -25,21 +23,36 @@
         <li class="tabs">首页</li>
         <li>课程</li>
         <li>院校</li>
-        <li>题库</li>
-        <li>APP</li>
+        <!-- <li>题库</li> -->
       </ul>
+    </div>
+    <!-- app下载 -->
+    <div class="app">
+      APP
+
+
+      <div class="sm">
+        <img src="./imgs/erweima.jpg" alt="">
+        扫码下载考研通APP
+      </div>
     </div>
     <!-- 登录注册跳转按钮 -->
     <div class="register">
-      <span>登录</span>/<span>注册</span>
+      <span>登录&nbsp;/&nbsp;注册</span>
     </div>
   </div>
   <!-- 内容区域 -->
   <div class="content">
     <!-- 首页 -->
-    <div>
+    <div class="index">
       <!-- 首屏轮播 -->
-      <div class="banner"></div>
+      <div class="banner">
+        <div class="flexslider">
+          <ul class="slides">
+            <!-- <li><img src="" alt=""></li> -->
+          </ul>
+        </div>
+      </div>
       <!-- 直播栏 -->
       <div class="live  gongyong">
         <div class="box">
@@ -48,13 +61,13 @@
               Live Class<br />
               直播课堂
             </h1>
-            <a href=""><img src="../imgs/jiantou.png" alt=""></a>
+            <a href=""><img src="./imgs/jiantou.png" alt=""></a>
 
           </div>
           <div class="bottom">
             <ul>
               <li class="big">
-                <img src="../imgs/touxiang.jpg" alt="">
+                <img src="./imgs/touxiang.jpg" alt="">
                 <div class="cont">
                   <h3>正在直播</h3>
                   <p>东南大学2121MBA宣讲会</p>
@@ -62,28 +75,28 @@
                 </div>
 
               </li>
-              <li><img src="../imgs/touxiang.jpg" alt="">
+              <li><img src="./imgs/touxiang.jpg" alt="">
                 <div class="cont">
                   <h3>正在直播</h3>
                   <p>东南大学2121MBA宣讲会</p>
                   <p>2020-06-20 14:00:00开播</p>
                 </div>
               </li>
-              <li><img src="../imgs/touxiang.jpg" alt="">
+              <li><img src="./imgs/touxiang.jpg" alt="">
                 <div class="cont">
                   <h3>正在直播</h3>
                   <p>东南大学2121MBA宣讲会</p>
                   <p>2020-06-20 14:00:00开播</p>
                 </div>
               </li>
-              <li><img src="../imgs/touxiang.jpg" alt="">
+              <li><img src="./imgs/touxiang.jpg" alt="">
                 <div class="cont">
                   <h3>正在直播</h3>
                   <p>东南大学2121MBA宣讲会</p>
                   <p>2020-06-20 14:00:00开播</p>
                 </div>
               </li>
-              <li><img src="../imgs/touxiang.jpg" alt="">
+              <li><img src="./imgs/touxiang.jpg" alt="">
                 <div class="cont">
                   <h3>正在直播</h3>
                   <p>东南大学2121MBA宣讲会</p>
@@ -103,8 +116,7 @@
               Course area<br />
               课程专区
             </h1>
-            <a href=""><img src="../imgs/jiantou.png" alt=""></a>
-
+            <a href=""><img src="./imgs/jiantou.png" alt=""></a>
           </div>
           <div class="bottom">
             <div class="swiper-container-solution">
@@ -115,7 +127,7 @@
                     <div class="solution-cardlist swiper-wrapper">
                       <div class="col-sm-4 swiper-slide">
                         <div class="solution-card">
-                          <img src="../imgs/a1.png" width="100%">
+                          <img src="./imgs/a1.png" width="100%">
                           <h3>快速获取文档元素</h3>
                           <p>jQuery的选择机制构建于Css的选择器，它提供了快速查询DOM文档中元素的能力，而且大大强化了JavaScript中获取页面元素的方式。
                           </p>
@@ -126,7 +138,7 @@
                       </div>
                       <div class="col-sm-4 swiper-slide">
                         <div class="solution-card">
-                          <img src="../imgs/a2.png" width="100%">
+                          <img src="./imgs/a2.png" width="100%">
                           <h3>提供漂亮的页面动态效果</h3>
                           <p>jQuery中内置了一系列的动画效果，可以开发出非常漂亮的网页，许多网站都使用jQuery的内置的效果</p>
                           <span><a href="#"><span class="arrow-more">了解详情</span><span class="arrow-f"></span></a>
@@ -136,7 +148,7 @@
                       </div>
                       <div class="col-sm-4 swiper-slide">
                         <div class="solution-card">
-                          <img src="../imgs/a3.png" width="100%">
+                          <img src="./imgs/a3.png" width="100%">
                           <h3>创建AJAX无刷新网页</h3>
                           <p>AJAX是异步的JavaScript和ML的简称，可以开发出非常灵敏无刷新的网页，特别是开发服务器端网页时</p>
                           <span><a href="#"><span class="arrow-more">了解详情</span><span class="arrow-f"></span></a>
@@ -145,7 +157,7 @@
                       </div>
                       <div class="col-sm-4 swiper-slide">
                         <div class="solution-card">
-                          <img src="../imgs/a4.png" width="100%">
+                          <img src="./imgs/a4.png" width="100%">
                           <h3>增强的事件处理</h3>
                           <p>jQuery提供了各种页面事件，它可以避免程序员在HTML中添加太事件处理代码</p>
                           <span><a href="#"><span class="arrow-more">了解详情</span><span class="arrow-f"></span></a>
@@ -154,7 +166,7 @@
                       </div>
                       <div class="col-sm-4 swiper-slide">
                         <div class="solution-card">
-                          <img src="../imgs/a5.png" width="100%">
+                          <img src="./imgs/a5.png" width="100%">
                           <h3>提供对JavaScript语言的增强</h3>
                           <p>jQuery提供了对基本JavaScript结构的增强，比如元素迭代和数组处理等操作。</p>
                           <span><a href="#"><span class="arrow-more">了解详情</span><span class="arrow-f"></span></a>
@@ -163,7 +175,7 @@
                       </div>
                       <div class="col-sm-4 swiper-slide">
                         <div class="solution-card">
-                          <img src="../imgs/a6.png" width="100%">
+                          <img src="./imgs/a6.png" width="100%">
                           <h3>更改网页内容</h3>
                           <p>jQuery可以修改网页中的内容，比如更改网页的文本、插入或者翻转网页图像</p>
                           <span><a href="#"><span class="arrow-more">了解详情</span><span class="arrow-f"></span></a>
@@ -172,7 +184,7 @@
                       </div>
                       <div class="col-sm-4 swiper-slide">
                         <div class="solution-card">
-                          <img src="../imgs/a1.png" width="100%">
+                          <img src="./imgs/a1.png" width="100%">
                           <h3>提供对JavaScript语言的增强</h3>
                           <p>jQuery提供了对基本JavaScript结构的增强，比如元素迭代和数组处理等操作。</p>
                           <span><a href="#"><span class="arrow-more">了解详情</span><span class="arrow-f"></span></a>
@@ -200,7 +212,7 @@
               Real time information <br />
               实时资讯
             </h1>
-            <a href=""><img src="../imgs/jiantou.png" alt=""></a>
+            <a href=""><img src="./imgs/jiantou.png" alt=""></a>
           </div>
           <div class="bottom">
             <ul>
@@ -274,21 +286,322 @@
       </div>
     </div>
     <!-- 课程 -->
-    <div class="hide">
-      课程
+    <div class="hide  classify">
+      <div class="tab">
+        <p>学习分类：</p>
+        <ul>
+          <li class="li">面试课程</li>
+          <li>外语课程</li>
+          <li>逻辑课程</li>
+          <li>写作课程</li>
+          <li>数学课程</li>
+        </ul>
+      </div>
+      <div class="class_cont">
+        <!-- 面试题 -->
+        <div class="div">
+          <h3>面试课程</h3>
+          <ul class="ul">
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- 外语 -->
+        <div class="div div_hide">
+          <h3>外语课程</h3>
+          <ul class="ul">
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- 逻辑 -->
+        <div class="div div_hide">
+          <h3>逻辑课程</h3>
+          <ul class="ul">
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- 写作课程 -->
+        <div class="div div_hide">
+          <h3>写作课程</h3>
+          <ul class="ul">
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- 数学 -->
+        <div class="div div_hide">
+          <h3>数学课程</h3>
+          <ul class="ul">
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+            <li>
+              <img src="./imgs/a1.png" alt="">
+              <div class="hidden">立即听课</div>
+              <p>MBA提前面试系统课程</p>
+              <div><span class="left">免费</span> <span class="right"><img src="./imgs/xiaoyanjing.png" alt="">115万</span>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <span class="btn">
+          <a id="pre_page">上一页</a>
+          <span>
+            <span id="current_page">1</span>
+            <span>/</span>
+            <span id="total_page"></span>
+          </span>
+          <a id="next_page">下一页</a>
+        </span>
+
+
+      </div>
     </div>
     <!-- 院校 -->
     <div class="hide">
-      院校
+      <header class="header">
+        <h1>推荐院校 </h1>
+        <p>Recommended institutions</p>
+      </header>
+      <div class="wrapper">
+        <div class="cols">
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(./imgs/1.png)">
+                <div class="inner">
+                  <p>西北农林科技大学</p>
+                  <span>Peking University</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>
+                    教育部直属、国家原“985工程”和“211工程”重点建设高校，首批入选国家“世界一流大学和一流学科”建设高校 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image:url(./imgs/2.png)">
+                <div class="inner">
+                  <p>中国海洋大学</p>
+                  <span>Lorem ipsum</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>2002年更名为中国海洋大学，2001年成为国家“985工程”重点建设的高等学校　。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(./imgs/3.png)">
+                <div class="inner">
+                  <p>交通大学</p>
+                  <span>Lorem ipsum</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>上海交通大学是我国历史最悠久、享誉海内外的著名高等学府之一，是教育部直属并与上海市共建的全国重点大学。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(./imgs/4.png)">
+                <div class="inner">
+                  <p>同济大学</p>
+                  <span>Lorem ipsum</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>经过113年的发展，同济大学已经成为一所特色鲜明、在海内外有较大影响力的综合性、研究型、国际化大学，综合实力位居国内高校前列。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(./imgs/5.png)">
+                <div class="inner">
+                  <p>香港城市大学</p>
+                  <span>Lorem ipsum</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>《泰晤士高等教育》2020年世界大学排名「全球最国际化大学」
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(./imgs/6.png)">
+                <div class="inner">
+                  <p>香港浸会大学</p>
+                  <span>Lorem ipsum</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>浸大拥有八个学院/学院，提供一系列的本科课程，副学士学位和高等文凭课程，以及授课的研究生课程和研究型研究生课程，从而获得硕士学位和博士学位。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(./imgs/7.png)">
+                <div class="inner">
+                  <p>香港科技大学</p>
+                  <span>Lorem ipsum</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>环太平洋大学联盟、东亚研究型大学协会、亚洲大学联盟、中国大学校长联谊会、京港大学联盟、粤港澳高校联盟重要成员，并获AACSB和EQUIS双重认证，是一所亚洲顶尖的研究型大学。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(./imgs/8.png)">
+                <div class="inner">
+                  <p>香港中文大学</p>
+                  <span>Lorem ipsum</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>
+                    一所亚洲顶尖、享誉国际的公立研究型综合大学，在中国研究、生物医学科学、信息科学、经济与金融、地球信息与地球科学等重点研究领域堪称世界级学术重镇，也是香港唯一有诺贝尔奖、菲尔兹奖及图灵奖得主任教的大学。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- 题库 -->
-    <div class="hide">
+    <!-- <div class="hide">
       题库
-    </div>
+    </div> -->
     <!-- app -->
-    <div class="hide">
+    <!-- <div class="hide">
       app
-    </div>
+    </div> -->
   </div>
   </div>
   <!-- 底部区域 -->
@@ -312,9 +625,10 @@
   </div>
   <script src="./js/jquery-3.5.1.min.js"></script>
   <script src="./js/swiper.min.js"></script>
-  <script src="./js/home.js"></script>
+  <script src="./js/jquery.flexslider-min.js"></script>
+  <script src="./js/rem.js"></script>
   <script src="./js/index.js"></script>
-
+  <script src="./js/ajax.js"></script>
 </body>
 
 </html>
